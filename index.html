@@ -10,10 +10,9 @@
 </head>
 <body>
     <div id="vue-app">
-        <!--For the Data and Methods-->
-        <h1> {{ greet('afternoon')}} </h1> <!--Call the function method "greet"-->
-        <p>Name: {{ name }}</p> <!--Displays "Shaun" data-->
-        <p>Job: {{ job }}</p>
+        <!--For Data Binding-->
+        <h1>Data Binding </h1>
+        <a v-bind:href="website">The Net Ninja</a> <!--Add v-bind to access the href attribute of the data property website-->
     </div>
     
     <script src="app.js"></script>

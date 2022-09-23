@@ -2,7 +2,8 @@ new Vue({
     el: '#vue-app',
     data:{
         name:'Shaun',
-        job:'Ninja'
+        job:'Ninja',
+        website:"www.thenetninja.co.uk" // Add data website property
     },  //store all the data in vue instance
     methods: {
         greet: function(time) {
