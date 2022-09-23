@@ -10,11 +10,11 @@
 </head>
 <body>
     <div id="vue-app">
-        <!--For Data Binding-->
-        <h1>Data Binding </h1>
-        <a v-bind:href="website">The Net Ninja</a> <!--Add v-bind to access the href attribute of the data property website-->
-        <input type="text" v-bind:value="name"> <!--Add data binding for the value of the data property name-->
-        <p v-html="websiteTag"></p> <!--Add v-html to access the value of data property websiteTag-->
+       <h1>Events</h1>
+       <!--Manually added of v-on:click with age increment and decrement-->
+       <button v-on:click="age++">Add a Year</button>
+       <button  v-on:click="age--">Subtract a Year</button>
+       <p>My age is {{age}} </p>
     </div>
     
     <script src="app.js"></script>
