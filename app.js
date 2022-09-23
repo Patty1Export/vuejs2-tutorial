@@ -5,8 +5,8 @@ new Vue({
         job:'Ninja'
     },  //store all the data in vue instance
     methods: {
-        greet: function() {
-            return 'Good Morning'
+        greet: function(time) {
+            return `Good ${time}` //change time using passed  parameters
         }
     }
 });
