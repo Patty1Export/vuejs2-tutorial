@@ -3,5 +3,10 @@ new Vue({
     data:{
         name:'Shaun',
         job:'Ninja'
-    }  //store all the data in vue instance
+    },  //store all the data in vue instance
+    methods: {
+        greet: function() {
+            return 'Good Morning'
+        }
+    }
 });
