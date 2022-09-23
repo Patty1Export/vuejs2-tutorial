@@ -12,12 +12,16 @@
     <div id="vue-app">
        <h1>Events</h1>
        <!--Add methods on the buttons-->
-       <button v-on:click="add(1)">Add a Year</button>
+       <button @click="add(1)">Add a Year</button>
        <button v-on:click="subtract(1)">Subtract a Year</button>
        <!--For Double CLick Event-->
-       <button v-on:dblclick="add(10)">Add 10 Years</button>
+       <button @dblclick="add(10)">Add 10 Years</button>
        <button v-on:dblclick="subtract(10)">Subtract 10 Years</button>
        <p>My age is {{age}} </p>
+
+       <div id="canvas" v-on:mousemove="updateXY">
+        {{ x }}, {{ y }}
+       </div>
     </div>
     
     <script src="app.js"></script>
