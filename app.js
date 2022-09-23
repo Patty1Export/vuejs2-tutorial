@@ -6,7 +6,10 @@ new Vue({
     },  //store all the data in vue instance
     methods: {
         greet: function(time) {
-            return `Good ${time}` //change time using passed  parameters
+            
+            return `Good ${time} ${this.name}` 
+            //change time using passed  parameters
+            //add return name property in function method greet to access the data
         }
     }
 });
