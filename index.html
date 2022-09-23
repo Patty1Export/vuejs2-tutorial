@@ -11,9 +11,12 @@
 <body>
     <div id="vue-app">
        <h1>Events</h1>
-       <!--Manually added of v-on:click with age increment and decrement-->
-       <button v-on:click="age++">Add a Year</button>
-       <button  v-on:click="age--">Subtract a Year</button>
+       <!--Add methods on the buttons-->
+       <button v-on:click="add(1)">Add a Year</button>
+       <button v-on:click="subtract(1)">Subtract a Year</button>
+       <!--For Double CLick Event-->
+       <button v-on:dblclick="add(10)">Add 10 Years</button>
+       <button v-on:dblclick="subtract(10)">Subtract 10 Years</button>
        <p>My age is {{age}} </p>
     </div>
     
