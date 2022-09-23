@@ -3,7 +3,8 @@ new Vue({
     data:{
         name:'Shaun',
         job:'Ninja',
-        website:"www.thenetninja.co.uk" // Add data website property
+        website:"www.thenetninja.co.uk", // Add data website property
+        websiteTag:'<a href="www.thenetninja.co.uk"> The Net Ninja Website</a>'
     },  //store all the data in vue instance
     methods: {
         greet: function(time) {
